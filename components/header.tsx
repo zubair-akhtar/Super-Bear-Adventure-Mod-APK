@@ -13,7 +13,7 @@ export function Header() {
       <header className="sticky top-1 z-50 bg-background border-b border-border transition-colors duration-300">
         <nav className="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
           <Link href="/" className="flex items-center space-x-2">
-            <img src="/images/logo.webp" style={{ maxWidth: "151px", height: "auto" }} alt="Super Bear Adventures Logo" />
+            <img src="/images/logo.webp" style={{ maxWidth: "121px", height: "auto" }} alt="Super Bear Adventures Logo" />
           </Link>
 
           <ul className="hidden md:flex items-center space-x-8 font-semibold text-foreground">

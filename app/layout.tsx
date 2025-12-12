@@ -133,6 +133,21 @@ export default function RootLayout({
             }),
           }}
         />
+        {/* Google Analytics */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-CV5P20DK7Y"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-CV5P20DK7Y');
+            `,
+          }}
+        />
       </head>
       <body className={`${inter.className} font-sans`}>
         <ScrollProgress />
@@ -163,22 +178,6 @@ export default function RootLayout({
             </ul>
           </nav>
         </ThemeProvider>
-        
-        {/* Google Analytics 
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-PR08GS9PRS"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-PR08GS9PRS');
-            `,
-          }}
-        />*/}
       </body>
     </html>
   )
